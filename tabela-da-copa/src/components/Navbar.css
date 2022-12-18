@@ -1,0 +1,19 @@
+.nav-link{
+    color: rgb(248, 247, 247);
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.nav-brand{
+    color: rgb(248, 247, 247);
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
