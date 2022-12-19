@@ -90,10 +90,12 @@ export default function Equipes() {
   }
 
   return (
+
+    <div className="equipes">
     <div className="box">
       {equipes ? equipes.map((item) => {
             return (
-                <div className="linha">
+                <div key = {item.id} className="linha">
                   <img 
                     alt="Escudo" 
                     src={item.escudo} 
@@ -121,33 +123,34 @@ export default function Equipes() {
             );
           })
         : false}
-
-    <button type="button" onClick={novosDados}>Novo</button>
-      {tipo ? (
-        <>
-          <input
-            type="text"
-            name="txtNome"
-            value={nome}
-            onChange={(e) => {
-              setNome(e.target.value);
-            }}
-          />
-          <input
-            type="text"
-            name="txtEscudo"
-            value={escudo}
-            onChange={(e) => {
-              setEscudo(e.target.value);
-            }}
-          />
-          <button type="button" onClick={limparDados}>Cancelar</button>
-          <button type="button" onClick={gravaDados}>Gravar</button>
-        </>
-      ) : (
-        false
-      )}
-  
     </div>
+    <div className="buttons">
+    <button type="button" onClick={novosDados}>Novo</button>
+    {tipo ? (
+      <>
+        <input
+          type="text"
+          name="txtNome"
+          value={nome}
+          onChange={(e) => {
+            setNome(e.target.value);
+          }}
+        />
+        <input
+          type="text"
+          name="txtEscudo"
+          value={escudo}
+          onChange={(e) => {
+            setEscudo(e.target.value);
+          }}
+        />
+        <button type="button" onClick={limparDados}>Cancelar</button>
+        <button type="button" onClick={gravaDados}>Gravar</button>
+      </>
+    ) : (
+      false
+    )}
+  </div>
+  </div>
   );
 }

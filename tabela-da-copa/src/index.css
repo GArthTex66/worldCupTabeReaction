@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Qatar2022Arabic";
+  src: local("Qatar2022Arabic"),
+   url("./fonts/Qatar2022/Qatar2022Arabic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+  :root {
+    --qatarColor1: #56042C;
+    --qatarColor2: #F2F2F2;
+    --qatarColor3: #49BCE3;
+    --qatarColor4: #7F1431;
+    --qatarColor5: #2C7399;
+    --qatarColor6: #5CCA87;
+  }

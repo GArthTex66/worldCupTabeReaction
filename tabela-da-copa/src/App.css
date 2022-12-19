@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.font-face-gm {
+  font-family: "Qatar2022Arabic";
+ }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

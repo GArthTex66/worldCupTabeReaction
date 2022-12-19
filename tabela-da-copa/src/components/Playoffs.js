@@ -1,5 +1,5 @@
 import React from "react";
-import Tabela from "./Select"
+import Tabela from "./Tabela"
 import './styles.css'
 
 export default function Oitavas() {
