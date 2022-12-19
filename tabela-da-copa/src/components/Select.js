@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Form from 'react-bootstrap/Form';
 import "./Select.css"
 
-export default function Tabela() {
+export default function Select() {
   
   const [equipes, setEquipes] = useState([]);
   const url = "https://backendexpress-c4f5o2wtd-felipewallace.vercel.app/";
@@ -26,7 +26,9 @@ export default function Tabela() {
       {equipes.map((equipe) => 
           <option key={equipe.id} value={equipe.id}>{equipe.nome}</option>
       )}
-    </Form.Select>
+      </Form.Select>
+      <input type="number" className="placar"/>
+      <input type="number" className="penaltis"/>
     </>
     
   );
