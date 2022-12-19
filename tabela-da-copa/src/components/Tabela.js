@@ -24,7 +24,7 @@ export default function Tabela() {
     <>
       <Form.Select>
       {equipes.map((equipe) => 
-          <option value={equipe.id}>{equipe.nome}</option>
+          <option key={equipe.id} value={equipe.id}>{equipe.nome}</option>
       )}
     </Form.Select>
     </>

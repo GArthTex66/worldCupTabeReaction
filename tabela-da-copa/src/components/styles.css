@@ -95,7 +95,7 @@ input {
 .share-icon {color: #fff; opacity: 0.35; }
 .share-icon:hover { opacity:1;  -webkit-animation: pulse 0.5s; animation: pulse 0.5s;}
 .date {font-size: 10px; letter-spacing: 2px;color:#3F915F;}
-
+.image-icon {width: 60%; height: 60%;}
 
 
 @media screen and (min-width: 981px) and (max-width: 1099px) {

@@ -1,5 +1,6 @@
 import React from "react";
 import Tabela from "./Tabela"
+import logo from '../assets/logo.png'
 import './styles.css'
 
 export default function Oitavas() {
@@ -49,7 +50,7 @@ export default function Oitavas() {
         </ul>
       </div>
       <div className="final">
-        <i className="fa fa-trophy"></i>
+        <img className="image-icon" src={logo} alt="logo"/>
         <div className="round-details">FINAL<br/><span className="date">March 30 - Apr. 1</span></div>    
         <ul className ="matchup championship">
           <li className="team team-top"><Tabela/><span className="vote-count">1</span></li>
